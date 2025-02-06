@@ -1,0 +1,232 @@
+/* Estilos gerais */
+*{
+    color: #25282e;
+    font-family: "Montserrat", serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+a, i{
+    transition: .5s;
+    text-decoration: none;
+}
+
+.secundary-color{
+    color: #555;
+}
+
+.center-image{
+    background-size: cover;
+    background-position: center;
+}
+
+.btn{
+    text-decoration: none;
+    background-color: #25282e;
+    color: #fff;
+    padding: 7px 18px;
+    border-radius: 0;
+
+}
+
+.btn:hover {
+    background-color: #333;
+    color: #FFF;
+}
+
+
+/* Cabeçalho */
+#header{
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+}
+
+#header p{
+    margin-bottom: 0;
+}
+
+.logo-container{
+    max-width: 189px;
+}
+
+.logo-container h1{
+    color: #25282ebf;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.logo-container img{
+    width: 100%;
+}
+
+#navbar{
+    padding: 10px;
+    margin: 10px auto;
+}
+
+#navbar a{
+    width: 80px;
+    color: #444;
+}
+
+#navbar a:hover{
+    /* color: red; */
+    color: #C1B696;
+}
+
+/* Main banner */
+.main-image{
+    height: 510px;
+    background-image: url(../img/imagem-interna-03-edit.jpg);
+    margin-bottom: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    justify-content: center;
+}
+
+.gallery-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+#sobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#imagem-sobre-container{
+    display: flex;
+    justify-content: center;
+
+}
+
+#imagem-sobre-container img{
+    max-width: 50%;
+}
+
+.main-image-info{
+    background-color: #fff;
+    padding: 25px;
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+}
+
+.container-imagens{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.container-imagens img{
+    width: 25%;
+}
+
+
+/* Rodapé */
+.footer{
+    grid-area: footer;
+    display: flex;
+    background-color: lightgreen;
+    background-color: #25282e;
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.footer h4 img{
+    /* font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ccc; */
+    max-width: 100px;
+}
+
+.footer nav{
+    margin: 50px 0;
+}
+
+.footer nav ul{
+    display: flex;
+    justify-content: center;
+    max-width: 320px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.footer nav ul li{
+    list-style-type: none;
+}
+
+.footer nav ul li a{
+    font-weight: 500;
+    font-size: 2rem;
+    color: #ccc;
+    transition: 0.5s;
+}
+
+.footer nav ul li a:hover{
+    color: white;
+}
+
+.footer .social{
+    display: flex;
+    justify-content: center;
+}
+
+.footer .social i{
+    font-size: 2rem;
+    transition: 0.3s;
+    color: #ccc;
+}
+
+.footer .social a{
+    margin: 20px;
+}
+
+.footer .social a:hover i{
+    color: #C1B696;
+}
+
+
+@media(max-width: 767px){
+    .main-image{
+        background-image: url(../img/banner-768px.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    #sobre{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .container-imagens{
+        flex-direction: column;
+        align-items: center;
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+    .container-imagens img{
+        width: 100%;
+    }
+    #imagem-sobre-container{
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+    #imagem-sobre-container img{
+        max-width: 100%;
+    }
+
+}
